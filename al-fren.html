@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Adrien Laloyaux</title>
+    <link rel="icon" type="image/png" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'" />
+    <link href="css/maindark.css" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body id="top">
+    <div class="intro-bubble" id="introBubble">
+        Bienvenue sur mon CV interactif ! 👋
+    </div>
+    <header class="d-print-none">
+        <div class="container text-center text-lg-left">
+            <div class="py-3 clearfix">
+                <div class="tools-bar d-flex justify-content-end align-items-center gap-2 pe-3 pt-2">
+                    <button class="btn btn-lang" onclick="setLanguage('fr')" title="Français">
+                        <img src="images/fr.svg" alt="Français" width="20" height="15">
+                    </button>
+                    <button class="btn btn-lang" onclick="setLanguage('en')" title="English">
+                        <img src="images/gb.svg" alt="English" width="20" height="15">
+                    </button>
+                    <button class="btn btn-mode" onclick="toggleDarkMode()" title="Mode clair/sombre">🌓</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="downloadCorrectPDF()">📄 PDF</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-content" id="cvContent">
+
+        <div class="container">
+            <div class="cover shadow-lg bg-white">
+                <div class="cover-bg p-3 p-lg-4 text-white">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5">
+                            <div class="avatar hover-effect bg-white shadow-sm p-1"><img src="images/moi.jpg" width="200" height="200" /></div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 text-center text-md-start">
+                            <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Adrien Laloyaux</h2>
+                            <p data-aos="fade-left" data-aos-delay="100" lang="fr">💻 Développeur .NET & Blazor | 🔐 Environnement Défense | 🚀 Freelance Web</p>
+                            <p data-aos="fade-left" data-aos-delay="100" lang="en" style="display:none">💻 .NET & Blazor Developer | 🔐 Defense Environment | 🚀 Freelance Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="h3 mb-3" lang="fr">👨‍💼 À propos de moi</h2>
+                            <h2 class="h3 mb-3" lang="en" style="display:none">👨‍💼 About Me</h2>
+                            <p lang="fr">Développeur web passionné avec une spécialisation en .NET Core et Blazor, je combine mon expérience dans la Défense avec mon activité freelance pour concevoir des solutions web.</p>
+                            <p lang="en" style="display:none">Passionate web developer specialized in .NET Core and Blazor. I combine my experience in the Defense sector with my freelance activity to design powerful web solutions.</p>
+                        </div>
+                        <div class="col-md-5 offset-md-1">
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="pb-1" lang="fr">Âge</div>
+                                    <div class="pb-1" lang="en" style="display:none">Age</div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-1 text-secondary">37</div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pb-1">Email</div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-1 text-secondary">adrien@monkeydevsolutions.com</div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pb-1" lang="fr">Téléphone</div>
+                                    <div class="pb-1" lang="en" style="display:none">Phone</div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-1 text-secondary">0479108700</div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pb-1" lang="fr">Adresse</div>
+                                    <div class="pb-1" lang="en" style="display:none">Address</div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="pb-1 text-secondary">Rue Leopold I, 358 Jette</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-print-none" />
+                <div class="skills-section px-3 px-lg-4">
+                    <h2 class="h3 mb-3" lang="fr">🧰 Compétences</h2>
+                    <h2 class="h3 mb-3" lang="en" style="display:none">🧰 Skills</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <span>ASP.NET Core </span>
+                                <div class="progress my-1"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
+                            </div>
+                            <div class="mb-2">
+                                <span>Entity Framework</span>
+                                <div class="progress my-1"><div class="progress-bar bg-primary" style="width: 80%"></div></div>
+                            </div>
+                            <div class="mb-2">
+                                <span>Blazor</span>
+                                <div class="progress my-1"><div class="progress-bar bg-primary" style="width: 80%"></div></div>
+                            </div>
+                            <div class="mb-2">
+                                <span>Angular</span>
+                                <div class="progress my-1"><div class="progress-bar bg-warning" style="width: 50%"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <span>SQL Server</span>
+                                <div class="progress my-1"><div class="progress-bar bg-success" style="width: 70%"></div></div>
+                            </div>
+                            <div class="mb-2">
+                                <span>Powershell</span>
+                                <div class="progress my-1"><div class="progress-bar bg-success" style="width: 60%"></div></div>
+                            </div>
+                            <div class="mb-2">
+                                <span>HTML / CSS / JS</span>
+                                <div class="progress my-1"><div class="progress-bar bg-success" style="width: 60%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-print-none" />
+                <div id="experienceBg" class="work-experience-section px-3 px-lg-4">
+                    <h2 class="h3 mb-4" lang="fr">💼 Expérience professionnelle</h2>
+                    <h2 class="h3 mb-4" lang="en" style="display:none">💼 Professional Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-card timeline-card-primary card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Développeur Freelance Fullstack .NET & Web <span class="text-muted h6">chez MonkeyDev</span></div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Freelance Fullstack .NET & Web Developer <span class="text-muted h6">at MonkeyDev</span></div>
+                                <div class="text-muted text-small mb-2" lang="fr">2023 - aujourd’hui</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">2023 - today</div>
+                                <ul lang="fr">
+                                    <li>Développement d'applications web sur mesure (ASP.NET, Blazor)</li>
+                                    <li>Intégration d’IA dans les projets web et métiers</li>
+                                    <li>Conseil en matériel, réseau, déploiement technique</li>
+                                </ul>
+                                <ul lang="en" style="display:none">
+                                    <li>Custom web application development (ASP.NET, Blazor)</li>
+                                    <li>AI integration into business and web projects</li>
+                                    <li>Consulting on hardware, networking, and deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-primary card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Développeur .NET & Administrateur système <span class="text-muted h6">La Défense - CCV&C</span></div>
+                                <div class="h5 mb-1" lang="en" style="display:none">.NET Developer & System Administrator <span class="text-muted h6">Belgian Defense - CCV&C</span></div>
+                                <div class="text-muted text-small mb-2" lang="fr">2021 - aujourd’hui</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">2021 - today</div>
+                                <ul lang="fr">
+                                    <li>Développement d’outils internes sécurisés en ASP.NET Core et Blazor</li>
+                                    <li>Automatisation de tâches via PowerShell</li>
+                                    <li>Gestion Active Directory & SQL Server</li>
+                                </ul>
+                                <ul lang="en" style="display:none">
+                                    <li>Development of secure internal tools using ASP.NET Core and Blazor</li>
+                                    <li>Task automation with PowerShell</li>
+                                    <li>Active Directory and SQL Server administration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-primary card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Admin Système & Réseau <span class="text-muted h6">chez 6Gp Cis, Evere</span></div>
+                                <div class="h5 mb-1" lang="en" style="display:none">System & Network Administrator <span class="text-muted h6">at 6Gp Cis, Evere</span></div>
+                                <div class="text-muted text-small mb-2">2019 - 2021</div>
+                                <div lang="fr">Support technique de niveau 1 pour les utilisateurs internes. Installation et configuration de systèmes pour les clients. Maintenance et mise à jour des infrastructures réseau.</div>
+                                <div lang="en" style="display:none">Level 1 technical support for internal users. Installation and configuration of systems for clients. Maintenance and updates of network infrastructure.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-print-none" />
+                <div class="page-break"></div>
+                <div id="educationBg" class="education-section px-3 px-lg-4 pb-4">
+                    <h2 class="h3 mb-4" lang="fr">🎓 Formation</h2>
+                    <h2 class="h3 mb-4" lang="en" style="display:none">🎓 Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-card timeline-card-success card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Bachelier en Informatique de Gestion <span class="text-muted h6">de l'EPHEC</span></div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Bachelor in Computer Science <span class="text-muted h6">from EPHEC</span></div>
+                                <div class="text-muted text-small mb-2">2019 - 2023</div>
+                                <ul lang="fr">
+                                    <li>Développement C# / ASP.NET / SQL Server</li>
+                                    <li>Gestion de projets, Réseaux, Analyse, E-business</li>
+                                    <li><strong>TFE :</strong> Gestionnaire Active Directory en ASP.NET Core 6 & Blazor</li>
+                                    <li>Mention : Grande Distinction</li>
+                                </ul>
+                                <ul lang="en" style="display:none">
+                                    <li>C# / ASP.NET / SQL Server development</li>
+                                    <li>Project management, Networking, Analysis, E-business</li>
+                                    <li><strong>Final Project:</strong> Active Directory Manager using ASP.NET Core 6 & Blazor</li>
+                                    <li>Graduated with Honors</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-success card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">École Royale des Sous-Officiers</div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Royal School for Non-Commissioned Officers</div>
+                                <div class="text-muted text-small mb-2">2015 - 2018</div>
+                                <div lang="fr">Spécialisation en transmission : pose de ligne, réseau, administration système.</div>
+                                <div lang="en" style="display:none">Specialized in transmission: line laying, networking, and system administration.</div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-success card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Classe préparatoire intégrée <span class="text-muted h6">de l'EISTI, Cergy</span></div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Integrated Preparatory Class <span class="text-muted h6">at EISTI, Cergy</span></div>
+                                <div class="text-muted text-small mb-2">2009 - 2011</div>
+                                <div lang="fr">Formation en maths-physique informatique.</div>
+                                <div lang="en" style="display:none">Training in Mathematics, Physics, and Computer Science.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-print-none" />
+                <div class="page-break"></div>
+                <div id="hobbiesBg" class="hobbies-section px-3 px-lg-4 pb-4">
+                    <h2 class="h3 mb-4" lang="fr" style="color: orange;">🎯Hobbies et intérêts</h2>
+                    <h2 class="h3 mb-4" lang="en" style="color: orange; display: none;">🎯 Hobbies & Interests</h2>
+                    <div class="timeline">
+                        <div class="timeline-card timeline-card-orange card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Création de sites web</div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Website creation</div>
+                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2015</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2015</div>
+                                <div lang="fr">Création et maintenance de sites web personnels et professionnels.</div>
+                                <div lang="en" style="display:none">Design and maintenance of personal and professional websites.</div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-orange card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Mise en place et utilisation de serveurs VPN (Linux) et de serveurs de fichiers</div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Setting up and using VPN and file servers (Linux)</div>
+                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2016</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2016</div>
+                                <div lang="fr">Installation et configuration de serveurs VPN et de serveurs de fichiers pour un usage personnel et professionnel.</div>
+                                <div lang="en" style="display:none">Installation and configuration of VPN and file servers for personal and professional use.</div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-orange card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Sport : course à pied et cyclisme</div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Running & Cycling</div>
+                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2004</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2004</div>
+                                <div lang="fr">Participation régulière à des courses à pied et à des sorties en vélo. 500 km de course à pied et 8000 km de cyclisme par an.</div>
+                                <div lang="en" style="display:none">Regular participant in running events and cycling trips. Around 500km running and 8000km cycling per year.</div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-orange card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1" lang="fr">Collectionneur de gins</div>
+                                <div class="h5 mb-1" lang="en" style="display:none">Gin Collector</div>
+                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2018</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2018</div>
+                                <div lang="fr">Collection de plus de 150 bouteilles de gin du monde entier.</div>
+                                <div lang="en" style="display:none">Collector of over 150 gin bottles from around the world.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/tonprofil" target="_blank">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/adrien-laloyaux-02547a270/" target="_blank">💼 LinkedIn</a>
+            </div>
+            <div class="my-3">
+                <div class="h4">Adrien Laloyaux</div>
+            </div>
+            <div class="text-small">
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="scripts/aos.js?ver=1.2.0"></script>
+    <script src="scripts/main.js?ver=1.2.0"></script>
+    <script src="scripts/backgrounds.js"></script>
+    <script src="scripts/cv-lang.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/bubble.js"></script>
+    <script src="scripts/pdf-download.js"></script>
+    <script src="scripts/pdf-generate.js"></script>
+    <script src="scripts/background-export.js"></script>
+
+
+    
+
+</body>
+
+
+
+</html>

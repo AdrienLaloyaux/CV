@@ -1,0 +1,38 @@
+body.dark-mode {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+.dark-mode .card {
+	background-color: #1e1e1e;
+	color: #e0e0e0;
+}
+
+.dark-mode .text-muted {
+	color: #bbbbbb !important;
+}
+
+/* Tu peux ajouter d’autres éléments spécifiques */
+.dark-mode a {
+	color: #90caf9;
+}
+
+body.dark-mode .cover {
+	background-color: #1e1e1e !important;
+	box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+	border-radius: 10px;
+}
+
+body.dark-mode .cover-bg {
+	background-color: #2a2a2a !important;
+	color: #fff;
+}
+
+body.dark-mode .container {
+	background-color: #121212;
+}
+
+body.dark-mode .card-body {
+	background-color: #121212;
+	color: #e0e0e0;
+}

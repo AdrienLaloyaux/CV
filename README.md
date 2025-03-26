@@ -21,22 +21,22 @@ It supports French 🇫🇷 / English 🇬🇧, includes a Light 🌞 / Dark �
 
 
 📁 FOLDER STRUCTURE
--------------------
+```
 CV/
 ├── images/
-│   ├── pdf/                  # PDF versions of the CV
-│ 	│ 	├── al-fr-l.pdf               # French – Light Mode
-│ 	│ 	├── al-fr-d.pdf               # French – Dark Mode
-│ 	│ 	├── al-en-l.pdf               # English – Light Mode
-│ 	│ 	└── al-en-d.pdf               # English – Dark Mode
-│   ├── backgrounds/          # Static background images
-│   └── moi.jpg               # Profile picture
+│   ├── pdf/                     # PDF versions of the CV
+│   │   ├── al-fr-l.pdf         # French – Light Mode
+│   │   ├── al-fr-d.pdf         # French – Dark Mode
+│   │   ├── al-en-l.pdf         # English – Light Mode
+│   │   └── al-en-d.pdf         # English – Dark Mode
+│   ├── backgrounds/            # Static background images
+│   └── moi.jpg                 # Profile picture
 ├── css/
-│   └── main.css              # Main stylesheet
+│   └── main.css                # Main stylesheet
 ├── scripts/
-│   └── (optional JS)         # External JavaScript if extracted
-
-└── index.html                # Main HTML file
+│   └── (optional JS)           # External JavaScript if extracted
+└── index.html                  # Main HTML file
+```
 
 
 🚀 HOSTING WITH GITHUB PAGES

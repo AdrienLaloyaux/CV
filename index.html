@@ -37,6 +37,7 @@
         <div class="container text-center text-lg-left">
             <div class="py-3 clearfix">
                 <div class="tools-bar d-flex justify-content-end align-items-center gap-2 pe-3 pt-2">
+
                     <button class="btn btn-lang" onclick="setLanguage('fr')" title="Français">
                         <img src="images/fr.svg" alt="Français" width="20" height="15">
                     </button>
@@ -47,6 +48,12 @@
                     <button class="btn btn-sm btn-outline-secondary" onclick="downloadCorrectPDF()">📄 PDF</button>
                 </div>
             </div>
+        </div>
+        <div class="w-100 text-center mt-3 mb-2">
+            <a href="https://adrienlaloyaux.github.io/CV" target="_blank"
+               style="font-size: 1.1rem; font-weight: 500; color: #4A89DC;  word-break: break-word;">
+                🔗 https://adrienlaloyaux.github.io/CV
+            </a>
         </div>
     </header>
     <div class="page-content" id="cvContent">
@@ -100,7 +107,7 @@
                                     <div class="pb-1" lang="en" style="display:none">Address</div>
                                 </div>
                                 <div class="col-sm-8">
-                                    <div class="pb-1 text-secondary">Rue Leopold I, 358 Jette</div>
+                                    <div class="pb-1 text-secondary">Bruxelles</div>
                                 </div>
                             </div>
                         </div>
@@ -176,13 +183,13 @@
                                 <div class="text-muted text-small mb-2" lang="en" style="display:none">2021 - today</div>
                                 <ul lang="fr">
                                     <li>Développement d’outils internes sécurisés en ASP.NET Core et Blazor</li>
-                                    <li>Automatisation de tâches via PowerShell</li>
-                                    <li>Gestion Active Directory & SQL Server</li>
+                                    <li>Travail en autonomie complète : rédaction du cahier des charges, documentation technique et plans de test</li>
+                                    <li>Tests unitaires (xUnit) et validation systématique par un audit de sécurité externe toujours concluant</li>
                                 </ul>
                                 <ul lang="en" style="display:none">
                                     <li>Development of secure internal tools using ASP.NET Core and Blazor</li>
-                                    <li>Task automation with PowerShell</li>
-                                    <li>Active Directory and SQL Server administration</li>
+                                    <li>Fully autonomous workflow: specifications, technical documentation, and test plans</li>
+                                    <li>Unit tests (xUnit) and successful external security audits on every delivery</li>
                                 </ul>
                             </div>
                         </div>
@@ -199,6 +206,131 @@
                 </div>
                 <hr class="d-print-none" />
                 <div class="page-break"></div>
+
+                <!--<hr class="d-print-none" />-->
+                <div id="projectsBg" class="projects-section px-3 px-lg-4">
+                    <h2 class="h3 mb-4" lang="fr">
+                        🧪 Projets réalisés (24 derniers mois)
+                        <img src="images/Ico/dotnet.svg" alt="Asp" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/auth0.svg" alt="Auth0" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/blazor.svg" alt="Blazor" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/jwt.svg" alt="jwt" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/sql.svg" alt="sql" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/azure.svg" alt="Azure" style="height: 24px; vertical-align: middle;">
+                    </h2>
+                    <h2 class="h3 mb-4" lang="en" style="display:none">
+                        🧪 Recent Projects (Last 24 Months)
+                        <img src="images/Ico/dotnet.svg" alt="Asp" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/auth0.svg" alt="Auth0" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/blazor.svg" alt="Blazor" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/jwt.svg" alt="jwt" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/sql.svg" alt="sql" style="height: 24px; vertical-align: middle;">
+                        <img src="images/Ico/azure.svg" alt="Azure" style="height: 24px; vertical-align: middle;">
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-card timeline-card-violet card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1">2023–2025 · <span lang="fr">Dashboard communautaire avec espace vendeur</span><span lang="en" style="display:none">Community Dashboard with Seller Area</span></div>
+                                <div lang="fr" class="text-muted text-small mb-2">24 mois</div>
+                                <div lang="en" style="display:none" class="text-muted text-small mb-2">24 months</div>
+                                <div lang="fr">Interface multilingue avec profils, zones restreintes, système de notation et espace vendeur avec liens produits personnalisés et IA.</div>
+                                <div lang="en" style="display:none">Multilingual UI with profiles, restricted areas, ratings, and seller area with AI-enhanced content and product links.</div>
+
+                                <div class="row pt-2">
+                                    <div class="col-md-4">
+                                        🔹 ASP.NET Core<br>
+                                        🔹 Blazor<br>
+                                        🔹 Minimal API<br>
+                                        🔹 Custom Middleware & Handlers
+                                    </div>
+                                    <div class="col-md-4">
+                                        🔹 Auth0 & JWT<br>
+                                        🔹 HMAC<br>
+                                        🔹 FluentValidation & Mediator<br>
+                                        🔹 xUnit (Tests)
+                                    </div>
+                                    <div class="col-md-4">
+                                        🔹 EF Core<br>
+                                        🔹 SQL Server<br>
+                                        🔹 Azure<br>
+                                        🔹 Clean Architecture & CQRS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-violet card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1">2023–2025 · <span lang="fr">Gestionnaire Active Directory modulaire</span><span lang="en" style="display:none">Modular Active Directory Manager</span></div>
+                                <div lang="fr" class="text-muted text-small mb-2">20 mois</div>
+                                <div lang="en" style="display:none" class="text-muted text-small mb-2">20 months</div>
+                                <div lang="fr">Solution web complète pour gérer les identités AD : création, modification, désactivation, réinitialisation, journalisation, groupes, droits.</div>
+                                <div lang="en" style="display:none">Complete web-based AD management: create, modify, disable accounts, reset passwords, log actions, and manage groups/permissions.</div>
+                                <div class="row pt-2">
+                                    <div class="col-md-3">🔹 ASP.NET Core<br>🔹 Blazor<br></div>
+                                    <div class="col-md-3">🔹 EF Core<br>🔹 AutoMapper<br></div>
+                                    <div class="col-md-3">🔹 FluentValidation<br>🔹 Mediator</div>
+                                    <div class="col-md-3">🔹 HMAC<br>🔹 SQL Server</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-violet card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1">2024 · <span lang="fr">Transfert d’e-mails automatisé</span><span lang="en" style="display:none">Automated Email Transfer</span></div>
+                                <div lang="fr" class="text-muted text-small mb-2">8 mois</div>
+                                <div lang="en" style="display:none" class="text-muted text-small mb-2">8 months</div>
+                                <div lang="fr">Configuration web et exécution de transferts automatisés entre services via Exchange.</div>
+                                <div lang="en" style="display:none">Web configuration and automation of internal email transfers via Exchange.</div>
+                                <div class="row pt-2">
+                                    <div class="col-md-3">🔹 ASP.NET Core <br>🔹 PowerShell</div>
+                                    <div class="col-md-3">🔹 Blazor <br>🔹 Exchange</div>
+                                    <div class="col-md-3">🔹 HMAC<br>🔹 SQL Server</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-card timeline-card-violet card shadow-sm">
+                            <div class="card-body">
+                                <div class="h5 mb-1">
+                                    2023–2024 ·
+                                    <span lang="fr">Outils utilitaires & automatisations</span>
+                                    <span lang="en" style="display:none">Utility Tools & Automation Projects</span>
+                                </div>
+                                <div class="text-muted text-small mb-2" lang="fr">Durées de 2 semaines à 4 mois</div>
+                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Projects from 2 weeks to 4 months</div>
+
+                                <ul lang="fr">
+                                    <li><strong>Fusion de logs :</strong> Agrégation multi-applications avec fusion intelligente et filtrage SQL.</li>
+                                    <li><strong>Correction AD :</strong> Détection et correction d’erreurs Active Directory depuis une base de référence.</li>
+                                    <li><strong>Export Excel + Stock :</strong> Import automatique, affichage stock et édition rapide depuis Excel.</li>
+                                    <li><strong>Facturation :</strong> Génération automatique de PDF depuis Excel avec mise en page.</li>
+                                </ul>
+                                <ul lang="en" style="display:none">
+                                    <li><strong>Log Aggregation:</strong> Multi-app aggregation with smart fusion and SQL filtering.</li>
+                                    <li><strong>AD Correction:</strong> Detects and fixes Active Directory mismatches from external reference.</li>
+                                    <li><strong>Excel Import + Stock:</strong> Automated import, stock display, and edit from Excel.</li>
+                                    <li><strong>Invoicing:</strong> Auto-generated PDF invoices from styled Excel sheets.</li>
+                                </ul>
+
+                                <div class="row pt-2">
+                                    <div class="col-md-6 col-lg-3">🔹 C#</div>
+                                    <div class="col-md-6 col-lg-3">🔹 EF Core</div>
+                                    <div class="col-md-6 col-lg-3">🔹 SQL Server</div>
+                                    <div class="col-md-6 col-lg-3">🔹 WinForms</div>
+                                    <div class="col-md-6 col-lg-3">🔹 Blazor</div>
+                                    <div class="col-md-6 col-lg-3">🔹 ASP.NET Core</div>
+                                    <div class="col-md-6 col-lg-3">🔹 Windows Auth</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <hr class="d-print-none" />
+                <div class="page-break"></div>
+
+
                 <div id="educationBg" class="education-section px-3 px-lg-4 pb-4">
                     <h2 class="h3 mb-4" lang="fr">🎓 Formation</h2>
                     <h2 class="h3 mb-4" lang="en" style="display:none">🎓 Education</h2>
@@ -248,26 +380,6 @@
                     <h2 class="h3 mb-4" lang="fr" style="color: orange;">🎯Hobbies et intérêts</h2>
                     <h2 class="h3 mb-4" lang="en" style="color: orange; display: none;">🎯 Hobbies & Interests</h2>
                     <div class="timeline">
-                        <div class="timeline-card timeline-card-orange card shadow-sm">
-                            <div class="card-body">
-                                <div class="h5 mb-1" lang="fr">Création de sites web</div>
-                                <div class="h5 mb-1" lang="en" style="display:none">Website creation</div>
-                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2015</div>
-                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2015</div>
-                                <div lang="fr">Création et maintenance de sites web personnels et professionnels.</div>
-                                <div lang="en" style="display:none">Design and maintenance of personal and professional websites.</div>
-                            </div>
-                        </div>
-                        <div class="timeline-card timeline-card-orange card shadow-sm">
-                            <div class="card-body">
-                                <div class="h5 mb-1" lang="fr">Mise en place et utilisation de serveurs VPN (Linux) et de serveurs de fichiers</div>
-                                <div class="h5 mb-1" lang="en" style="display:none">Setting up and using VPN and file servers (Linux)</div>
-                                <div class="text-muted text-small mb-2" lang="fr">Depuis 2016</div>
-                                <div class="text-muted text-small mb-2" lang="en" style="display:none">Since 2016</div>
-                                <div lang="fr">Installation et configuration de serveurs VPN et de serveurs de fichiers pour un usage personnel et professionnel.</div>
-                                <div lang="en" style="display:none">Installation and configuration of VPN and file servers for personal and professional use.</div>
-                            </div>
-                        </div>
                         <div class="timeline-card timeline-card-orange card shadow-sm">
                             <div class="card-body">
                                 <div class="h5 mb-1" lang="fr">Sport : course à pied et cyclisme</div>

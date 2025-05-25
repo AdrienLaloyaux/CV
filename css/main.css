@@ -1,4 +1,4 @@
-/* Buttons */
+﻿/* Buttons */
 /* Inputs */
 /* Timeline custom component */
 .timeline {
@@ -165,11 +165,13 @@ footer a:not(.nav-link) {
     margin-top: -10px; }
   .about-section {
     padding: 6.5rem 5rem 2rem !important; }
-  .skills-section,
-  .work-experience-section,
-  .education-section,
-  .contant-section {
-    padding: 1.5rem 5rem 2rem !important; }
+    .skills-section,
+    .work-experience-section,
+    .projects-section
+    .education-section,
+    .contant-section {
+        padding: 1.5rem 5rem 2rem !important;
+    }
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
@@ -274,4 +276,49 @@ footer a:not(.nav-link) {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.tech-columns {
+    columns: 4; /* ou 4 selon la largeur disponible */
+    column-gap: 2rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .tech-columns {
+        columns: 1;
+    }
+}
+
+.tech-columns li {
+    list-style-type: none;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+@media print {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        zoom: 0.93;
+        background-color: white !important;
+    }
+
+    .tools-bar,
+    .intro-bubble,
+    footer {
+        display: none !important;
+    }
+
+    .cover {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    * {
+        color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
 }

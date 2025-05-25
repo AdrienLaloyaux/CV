@@ -33,5 +33,13 @@ function applyRandomSectionBackground(sectionId, colors, lineCount = 25) {
 window.onload = function () {
   applyRandomSectionBackground("experienceBg", ["#4A89DC", "#007BFF", "#5D9CEC"]);
   applyRandomSectionBackground("educationBg", ["#37BC9B", "#20C997", "#48CFAD"]);
-  applyRandomSectionBackground("hobbiesBg", ["#FFA500", "#FF8C00", "#FFC107"]);
+    applyRandomSectionBackground("hobbiesBg", ["#FFA500", "#FF8C00", "#FFC107"]);
+    applyRandomSectionBackground("projectsBg", [
+        "#8A2BE2",  // BlueViolet
+        "#9B30FF",  // Purple (light)
+        "#A052D3",  // Medium Orchid
+        "#9370DB",  // Medium Purple
+        "#BA55D3",  // Orchid
+        "#DDA0DD",  // Plum
+    ]);
 };

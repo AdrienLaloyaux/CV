@@ -36,3 +36,65 @@ body.dark-mode .card-body {
 	background-color: #121212;
 	color: #e0e0e0;
 }
+
+body.dark-mode .tech-block {
+	background-color: #2b2b35; /* fond violet foncé/gris bleuté */
+	border-left: 4px solid #bb86fc; /* violet clair type material */
+	padding: 1rem 1.25rem;
+	border-radius: 8px;
+	margin-top: 1rem;
+	color: #e0e0e0; /* texte clair */
+}
+
+	body.dark-mode .tech-block ul {
+		margin-bottom: 0;
+	}
+
+	body.dark-mode .tech-block li {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+body.dark-mode .tech-exp {
+	background-color: #2b2b35;
+	border-left: 4px solid #90caf9; /* bleu clair lisible */
+	color: #e0e0e0;
+}
+
+	body.dark-mode .tech-exp .highlight-exp {
+		color: #90caf9;
+	}
+
+	body.dark-mode .tech-exp ul {
+		margin-bottom: 0;
+	}
+
+	body.dark-mode .tech-exp li {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+body.dark-mode .tech-education {
+	background-color: #203526; 
+	border-left: 4px solid #6fdc8c; 
+	padding: 1rem 1.25rem;
+	border-radius: 8px;
+	margin-top: 1rem;
+	color: #dfeedd;
+}
+
+	body.dark-mode .tech-education ul {
+		margin-bottom: 0;
+	}
+
+	body.dark-mode .tech-education li {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+body.dark-mode .tech-skills {
+	background-color: #2b2e39; /* gris bleuté foncé */
+	border-left: 4px solid #bb86fc; /* violet clair */
+	color: #e0e0e0;
+	padding: 1.5rem;
+	border-radius: 8px;
+	margin-top: 1rem;
+}
+

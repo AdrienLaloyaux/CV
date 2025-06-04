@@ -148,39 +148,69 @@ footer a:not(.nav-link) {
     margin-left: 0; } }
 
 @media print {
-  body {
-    background-color: #fff; }
-  .container {
-    width: auto;
-    max-width: 100%;
-    padding: 0; }
-  .cover, .cover-bg {
-    border-radius: 0; }
-  .cover.shadow-lg {
-    box-shadow: none !important; }
-  .cover-bg {
-    padding: 5rem !important;
-    padding-bottom: 10px !important; }
-  .avatar {
-    margin-top: -10px; }
-  .about-section {
-    padding: 6.5rem 5rem 2rem !important; }
+    body {
+        background-color: red !important;
+        
+    }
+
+    .container {
+        width: auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .cover, .cover-bg {
+        border-radius: 0;
+    }
+
+        .cover.shadow-lg {
+            box-shadow: none !important;
+        }
+
+    .cover-bg {
+        padding: 5rem !important;
+        padding-bottom: 10px !important;
+    }
+
+    .avatar {
+        margin-top: -10px;
+    }
+
+    .about-section {
+        padding: 6.5rem 5rem 2rem !important;
+    }
+
     .skills-section,
     .work-experience-section,
-    .projects-section
-    .education-section,
-    .contant-section {
+    .projects-section,
+    .education-section {
         padding: 1.5rem 5rem 2rem !important;
     }
-  .page-break {
-    padding-top: 5rem;
-    page-break-before: always; } }
+
+    .page-break {
+        display: block;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        page-break-before: always;
+        padding-top: 3rem;
+    }
+
+}
+
+    /*.fill-for-print {
+        height: calc(100vh - XXpx);*/ /* XX = hauteur des sections déjà présentes sur la page */
+        /*background: inherit;*/ /* ou transparent */
+        /*display: block;
+    }*/
+
 
 
 .section-title {
-  border-left: 4px solid #4A89DC;
-  padding-left: 10px;
-  font-weight: 600;
+    border-left: 4px solid #4A89DC;
+    padding-left: 10px;
+    font-weight: 600;
 }
 
 
@@ -322,3 +352,192 @@ footer a:not(.nav-link) {
         print-color-adjust: exact !important;
     }
 }
+.tech-block {
+    background-color: #f9f6ff;
+    border-left: 4px solid #6f42c1;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+    .tech-block ul {
+        margin-bottom: 0;
+    }
+
+    .tech-block li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+/* Techno-specific colors */
+.tech-cqrs {
+    color: #6f42c1; /* violet */
+    font-weight: 600;
+}
+
+.tech-mediatr {
+    color: #3f51b5; /* bleu foncé, élégant et lisible */
+    font-weight: 600;
+}
+
+.tech-minimal {
+    color: #607d8b; /* gris bleuté, moderne et neutre */
+    font-weight: 600;
+}
+
+.tech-auth {
+    color: #1e88e5; /* bleu vif */
+    font-weight: 600;
+}
+
+.tech-middleware {
+    color: #8e24aa; /* mauve */
+    font-weight: 600;
+}
+
+.tech-fluent {
+    color: #009688; /* turquoise foncé */
+    font-weight: 600;
+}
+
+.tech-xunit {
+    color: #795548; /* marron doux */
+    font-weight: 600;
+}
+
+.tech-ef {
+    color: #4caf50; /* vert */
+    font-weight: 600;
+}
+
+.tech-sql {
+    color: #2196f3; /* bleu SQL */
+    font-weight: 600;
+}
+
+.tech-blazor {
+    color: #9c27b0; /* violet Blazor */
+    font-weight: 600;
+}
+
+.tech-azure {
+    color: #007fff; /* bleu clair Azure */
+    font-weight: 600;
+}
+.tech-core {
+    color: #0078d4;
+    font-weight: 600;
+}
+/* ASP.NET Core - Azure blue */
+.tech-api {
+    color: #ff9800;
+    font-weight: 600;
+}
+/* API REST - orange vif */
+.tech-powershell {
+    color: #0277bd;
+    font-weight: 600;
+}
+/* PowerShell - bleu foncé */
+.tech-sql {
+    color: #4caf50;
+    font-weight: 600;
+}
+/* SQL Server - vert */
+.tech-json {
+    color: #8e24aa;
+    font-weight: 600;
+}
+/* JSON config - violet */
+.tech-blazor {
+    color: #512da8;
+    font-weight: 600;
+}
+/* Blazor - purple */
+.tech-auth {
+    color: #c62828;
+    font-weight: 600;
+}
+
+.tech-winforms {
+    color: #9c27b0; /* violet, dans la lignée de Blazor */
+    font-weight: 600;
+}
+
+.tech-csharp {
+    color: #68217A; /* Violet Microsoft */
+    font-weight: 600;
+}
+.tech-asp {
+    color: #0a66c2; /* Bleu Microsoft */
+    font-weight: 600;
+}
+/* Bloc avec fond bleu clair pour expérience freelance */
+.tech-exp {
+    background-color: #f0f6ff;
+    border-left: 4px solid #0d6efd; /* Bootstrap primary */
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+    .tech-exp ul {
+        margin-bottom: 0;
+    }
+
+    .tech-exp li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+/* Mise en avant des verbes clés */
+.highlight-exp {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.tech-education {
+    background-color: #f0f9f5; /* vert très pâle pour évoquer la réussite/formation */
+    border-left: 4px solid #28a745; /* vert Bootstrap "success" */
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    color: #333;
+}
+
+    .tech-education ul {
+        margin-bottom: 0;
+    }
+
+    .tech-education li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+.tech-hb {
+    background-color: #fff8ed; /* orange très clair */
+    border-left: 4px solid #ffa726; /* orange doux type "hobby" */
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    color: #333;
+}
+
+body.dark-mode .tech-hb {
+    background-color: #3a2d20; /* brun foncé/orangé doux */
+    border-left: 4px solid #ffb74d; /* orange clair type caramel */
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    color: #eee0d0; /* ton clair crème */
+}
+
+.tech-skills {
+    background-color: #f5f7fb;
+    border-left: 4px solid #6f42c1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 900px; /* limite la largeur */
+}
+/* Auth - rouge foncé */
